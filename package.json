@@ -1,0 +1,21 @@
+{
+  "name": "avocado-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "Manuel David Marin Gallego <manueldmg1999@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^12.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1"
+  }
+}
