@@ -23,7 +23,7 @@ function ProductItem() {
 
     return (
         <>
-            {isLoading ?<BiLoader size="50px"/> :
+            {isLoading ?<div className="loader"><BiLoader size="50px" className="spinning"/></div> :
             <div className="container">
                 <img src={product.image} alt="Imagen del aguacate" />
                 <Details product={product}/>
@@ -44,7 +44,23 @@ function ProductItem() {
                 justify-content: center;
 
             }
+
+            .loader{
+                height: 500px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
             
+            .spinning{
+                animation: spinner 1s linear infinite;
+            }
+            
+            @keyframes spinner{
+                to{
+                    transform: rotate(360deg);
+                }
+            }
             `}</style>
         </>
     )
