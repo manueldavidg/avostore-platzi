@@ -34,6 +34,7 @@ function ProductItem() {
 
             img{
                 width: 40%;
+                min-width:250px;
                 height: auto;
             }
             .container{
